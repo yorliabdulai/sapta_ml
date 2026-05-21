@@ -1,0 +1,26 @@
+# SAPTA default configuration (single source of truth)
+
+scoring:
+  weights:
+    fill: 0.35
+    rain: 0.25
+    dist: 0.20
+    leach: 0.10
+    vadose: 0.05
+    cond: 0.05
+  rain_cap_mm: 50
+  distance_decay_m: 30
+  vadose_max_m: 15
+  ordinal_scale_max: 5
+
+data:
+  seed: 42
+  n_pits: 30
+  center_lat: 10.3
+  center_lon: -0.8
+  pit_depth_mm: 2500
+
+dispatch:
+  truck_capacity: 10
+  hours_limit: 48
+  service_time_hours: 2
